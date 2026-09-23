@@ -1,37 +1,10 @@
-EV Assist Full Project
+EV Assist Backend
 
-Pages included:
-1. Login / Register
-2. Home
-3. Charging Stations + search/map UI
-4. Charging Station Details
-5. Battery Assistance
-6. Mechanic Support
-7. Profile
+1. Open this folder in VS Code terminal.
+2. npm install
+3. Copy .env.example to .env
+4. Make sure MongoDB is running, or put your MongoDB connection string in MONGO_URI.
+5. npm run dev
 
-Backend included:
-- Node.js + Express
-- MongoDB + Mongoose
-- JWT login
-- Password hashing with bcrypt
-- Assistance request API
-
-IMPORTANT:
-Copy your existing image33.png into:
-frontend/public/image33.png
-
-Then:
-FRONTEND:
-cd frontend
-npm install
-npm run dev
-Open http://localhost:5174
-
-BACKEND in a second terminal:
-cd backend
-npm install
-copy .env.example .env
-npm run dev
-
-For Windows PowerShell, if "npm.ps1 cannot be loaded" appears, use:
-Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+Backend: http://localhost:5000
+Health check: http://localhost:5000/api/health
